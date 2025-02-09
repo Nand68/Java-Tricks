@@ -16,3 +16,6 @@ Collections.sort(edges, new Comparator<Edge>() {
     return Integer.compare(e1.weight, e2.weight);
   }
 });
+
+// Also can write like this 
+ Collections.sort(edges, (e1, e2) -> Integer.compare(e1.weight, e2.weight));
